@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="View event details, ticket information and fundraising progress for a Harbour Hope charity event.">
+  <title>Event details | Harbour Hope</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="assets/js/config.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/common.js"></script>
+  <script defer src="assets/js/event.js"></script>
+</head>
+<body data-page="event">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Harbour Hope home"><span class="brand-mark" aria-hidden="true">HH</span><span>Harbour Hope</span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button><i data-lucide="menu"></i><span class="sr-only">Toggle navigation</span></button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-nav>
+        <a href="index.html" data-nav-link="home">Home</a>
+        <a href="search.html" data-nav-link="search">Find events</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div id="event-content" aria-live="polite">
+      <div class="container section-space"><div class="loading-state"><span class="spinner" aria-hidden="true"></span><p>Loading event details...</p></div></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Harbour Hope</strong><p>Local generosity, directed where it matters.</p></div>
+      <div><strong>Contact</strong><p>hello@harbourhope.example | +61 2 5550 0140</p></div>
+      <div><strong>Explore</strong><p><a href="search.html">Find another event</a></p></div>
+    </div>
+    <div class="container footer-bottom"><span>&copy; <span data-current-year></span> Harbour Hope Community Foundation</span></div>
+  </footer>
+</body>
+</html>
