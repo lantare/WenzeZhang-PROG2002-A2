@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover local charity events and support practical community programs with Harbour Hope.">
+  <title>Harbour Hope | Community charity events</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="assets/js/config.js"></script>
+  <script defer src="assets/js/api.js"></script>
+  <script defer src="assets/js/common.js"></script>
+  <script defer src="assets/js/home.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Harbour Hope home">
+        <span class="brand-mark" aria-hidden="true">HH</span>
+        <span>Harbour Hope</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-button>
+        <i data-lucide="menu"></i><span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-nav>
+        <a href="index.html" data-nav-link="home">Home</a>
+        <a href="search.html" data-nav-link="search">Find events</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="home-hero">
+      <img src="assets/images/hero-community.png" alt="Volunteers working together beside the harbour" width="1600" height="900">
+      <div class="home-hero__overlay">
+        <div class="container home-hero__content">
+          <p class="eyebrow">Local events. Practical impact.</p>
+          <h1>Harbour Hope</h1>
+          <p id="organization-mission">Turning local generosity into practical support for families, young people and neighbourhood services.</p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#upcoming"><i data-lucide="calendar-heart"></i><span>Explore events</span></a>
+            <a class="button button--light" href="search.html"><i data-lucide="search"></i><span>Search events</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-strip" aria-label="Current impact">
+      <div class="container impact-grid">
+        <div><strong id="event-count">-</strong><span>upcoming events</span></div>
+        <div><strong id="raised-total">-</strong><span>raised across listed events</span></div>
+        <div><strong>4</strong><span>local program areas</span></div>
+      </div>
+    </section>
+
+    <section class="container section-space" id="upcoming">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow--dark">Join the community</p>
+          <h2>Upcoming events</h2>
+        </div>
+        <a class="text-link" href="search.html">Search all events <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="event-grid" id="upcoming-events" aria-live="polite">
+        <div class="loading-state"><span class="spinner" aria-hidden="true"></span><p>Loading upcoming events...</p></div>
+      </div>
+    </section>
+
+    <section class="purpose-band">
+      <div class="container section-space">
+        <div class="section-heading section-heading--narrow">
+          <div>
+            <p class="eyebrow eyebrow--dark">What your support enables</p>
+            <h2>Community care with visible outcomes</h2>
+          </div>
+        </div>
+        <div class="purpose-grid">
+          <article><i data-lucide="home"></i><h3>Stable homes</h3><p>Emergency assistance and practical starter kits help people move into safe housing.</p></article>
+          <article><i data-lucide="graduation-cap"></i><h3>Confident learners</h3><p>School supplies, mentoring and workshops help young people participate fully.</p></article>
+          <article><i data-lucide="heart-handshake"></i><h3>Connected neighbours</h3><p>Food relief, inclusive activities and volunteer programs strengthen local support.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-space">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow--dark">Recent impact</p>
+          <h2>Past event highlights</h2>
+        </div>
+      </div>
+      <div class="event-grid event-grid--past" id="past-events" aria-live="polite">
+        <div class="loading-state"><span class="spinner" aria-hidden="true"></span><p>Loading event highlights...</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Harbour Hope</strong><p>Local generosity, directed where it matters.</p></div>
+      <div><strong>Contact</strong><p id="organization-contact">hello@harbourhope.example | +61 2 5550 0140</p></div>
+      <div><strong>Explore</strong><p><a href="search.html">Find an event</a></p></div>
+    </div>
+    <div class="container footer-bottom"><span>&copy; <span data-current-year></span> Harbour Hope Community Foundation</span></div>
+  </footer>
+</body>
+</html>
